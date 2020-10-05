@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Demo
 1. We use a [modified version](https://github.com/jhb86253817/FaceBoxesV2) of [FaceBoxes](https://github.com/zisianw/FaceBoxes.PyTorch) as the face detector, so go to folder `FaceBoxesV2/utils`, run `sh make.sh` to build for NMS.
-2. Back to folder `PIPNet`, create two empty folders `logs` and `snapshots`. For PIPNets, you can download our trained models from [here](https://drive.google.com/drive/folders/17OwDgJUfuc5_ymQ3QruD8pUnh5zHreP2?usp=sharing), and put them under folder `snapshots/DATA_NAME/EXPERIMENT_NAME/`. 
+2. Back to folder `PIPNet`, create two empty folders `logs`. For PIPNets, you can download our trained models from [here](https://drive.google.com/drive/folders/17OwDgJUfuc5_ymQ3QruD8pUnh5zHreP2?usp=sharing), and put them under folder `PIPNet`. 
 3. Edit `run_demo.sh` to choose the config file and input source you want, then run `sh run_demo.sh`. We support image, video, and camera as the input. Some sample predictions can be seen as follows.
 * PIPNet-ResNet18 trained on WFLW, with image `images/1.jpg` as the input:
 <img src="images/1_out_WFLW_model.jpg" alt="1_out_WFLW_model" width="400px">
